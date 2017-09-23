@@ -408,16 +408,12 @@ Zs = [\u0020\u00A0\u1680\u2000-\u200A\u202F\u205F\u3000]
 BreakToken      = "w9ef"       !IdentifierPart
 CaseToken       = "ilakan"     !IdentifierPart
 CatchToken      = "ched"       !IdentifierPart
-ClassToken      = "naw3"       !IdentifierPart
-ConstToken      = "khelli"     !IdentifierPart
 ContinueToken   = "zid"        !IdentifierPart
 DebuggerToken   = "7ellel"     !IdentifierPart
 DefaultToken    = "difo"       !IdentifierPart
 DeleteToken     = "m7i"        !IdentifierPart
 DoToken         = "dir"        !IdentifierPart
 ElseToken       = "wla"        !IdentifierPart
-EnumToken       = "la2i7a"     !IdentifierPart
-ExportToken     = "exporte"    !IdentifierPart
 ExtendsToken    = "warta"      !IdentifierPart
 FalseToken      = "ghalat"     !IdentifierPart
 FinallyToken    = "akhiran"    !IdentifierPart
@@ -425,14 +421,12 @@ ForToken        = "lkol"       !IdentifierPart
 FunctionToken   = "dalla"      !IdentifierPart
 GetToken        = "jib"        !IdentifierPart
 IfToken         = "ila"        !IdentifierPart
-ImportToken     = "importe"    !IdentifierPart
 InstanceofToken = "jayamen"    !IdentifierPart
 InToken         = "fi"         !IdentifierPart
 NewToken        = "sne3"       !IdentifierPart
 NullToken       = "walo"       !IdentifierPart
 ReturnToken     = "reje3"      !IdentifierPart
 SetToken        = "9ad"        !IdentifierPart
-SuperToken      = "menjdawdou" !IdentifierPart
 SwitchToken     = "3la7assab"  !IdentifierPart
 ThisToken       = "had"        !IdentifierPart
 ThrowToken      = "lo7"        !IdentifierPart
@@ -443,6 +437,14 @@ VarToken        = "goul"       !IdentifierPart
 VoidToken       = "faragh"     !IdentifierPart
 WhileToken      = "bidman"     !IdentifierPart
 WithToken       = "m3a"        !IdentifierPart
+
+// Future versions of ECMAScript. Not implemented yet
+ImportToken     = "importe"    !IdentifierPart
+ExportToken     = "exporte"    !IdentifierPart
+ClassToken      = "naw3"       !IdentifierPart
+ConstToken      = "khelli"     !IdentifierPart
+EnumToken       = "la2i7a"     !IdentifierPart
+SuperToken      = "menjdawdou" !IdentifierPart
 
 // Skipped
 
