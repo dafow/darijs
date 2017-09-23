@@ -1,11 +1,10 @@
 // Darijs Grammar
 // ==================
 //
-// Based on grammar from ECMA-262, 5.1 Edition [1] with a few keywords
-// replaced to do the English->Darija translation. Generated parser builds a
-// syntax tree compatible with the ESTree spec [2].
+// Based on grammar from pegjs with a few keywords
+// replaced to do the English->Darija translation.
 //
-// 99.999% of it is based on https://github.com/pegjs/pegjs/tree/master/examples/javascript.pegjs
+// 99.99999% based on https://github.com/pegjs/pegjs/tree/master/examples/javascript.pegjs
 
 {
   var TYPES_TO_PROPERTY_NAMES = {
@@ -413,7 +412,6 @@ ClassToken      = "naw3"       !IdentifierPart
 ConstToken      = "khelli"     !IdentifierPart
 ContinueToken   = "zid"        !IdentifierPart
 DebuggerToken   = "7ellel"     !IdentifierPart
-//todo
 DefaultToken    = "difo"       !IdentifierPart
 DeleteToken     = "m7i"        !IdentifierPart
 DoToken         = "dir"        !IdentifierPart
@@ -430,7 +428,7 @@ IfToken         = "ila"        !IdentifierPart
 ImportToken     = "importe"    !IdentifierPart
 InstanceofToken = "jayamen"    !IdentifierPart
 InToken         = "fi"         !IdentifierPart
-NewToken        = "nio"        !IdentifierPart
+NewToken        = "sne3"       !IdentifierPart
 NullToken       = "walo"       !IdentifierPart
 ReturnToken     = "reje3"      !IdentifierPart
 SetToken        = "9ad"        !IdentifierPart
@@ -1303,15 +1301,3 @@ SourceElements
 SourceElement
   = Statement
   / FunctionDeclaration
-
-// ----- A.6 Universal Resource Identifier Character Classes -----
-
-// Irrelevant.
-
-// ----- A.7 Regular Expressions -----
-
-// Irrelevant.
-
-// ----- A.8 JSON -----
-
-// Irrelevant.

@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	display: flex;
+}
+
+#darija {
+	width: 50%;
+	height: 100vh;
+	border: 2px;
+	background-color: #f3f3f3;
+}
+
+#js {
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#translated {
+	height: 60%;
+	width: 100%;
+	background-color: #ffffde;
+}
+
+#result {
+	height: 40%;
+	overflow: auto;
+}
+
+#result pre {
+	white-space: normal;
+}
