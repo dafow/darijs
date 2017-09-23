@@ -58,11 +58,12 @@ $(document).ready(function() {
 				'}catch(e){'+
 				'if(e instanceof ReferenceError){var varName=e.message.split(" ")[0];console.log("had \'"+varName+"\' ma kaynach aw!");}'+
 				'else if(e instanceof TypeError){var varName=e.message.split(" ")[0];console.log("had ldalla \'"+varName+"\' ma kaynach aw!");}'+
-				'else{console.log("sir googli hadchi... e.message);}'+
+				'else{console.log("sir googli hadchi..."+e.message);}'+
 				'}');
 				if (evaled !== undefined) window.kteb.message(evaled);
 			}
 			catch (evalErr) {
+				console.log(evalErr);
 			}
 		}
 		catch (err) {
