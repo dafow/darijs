@@ -414,7 +414,6 @@ DefaultToken    = "difo"       !IdentifierPart
 DeleteToken     = "m7i"        !IdentifierPart
 DoToken         = "dir"        !IdentifierPart
 ElseToken       = "wla"        !IdentifierPart
-ExtendsToken    = "warta"      !IdentifierPart
 FalseToken      = "ghalat"     !IdentifierPart
 FinallyToken    = "akhiran"    !IdentifierPart
 ForToken        = "lkol"       !IdentifierPart
@@ -434,17 +433,20 @@ TrueToken       = "sa7i7"      !IdentifierPart
 TryToken        = "jereb"      !IdentifierPart
 TypeofToken     = "mennaw3"    !IdentifierPart
 VarToken        = "goul"       !IdentifierPart
-VoidToken       = "faragh"     !IdentifierPart
 WhileToken      = "bidman"     !IdentifierPart
 WithToken       = "m3a"        !IdentifierPart
 
 // Future versions of ECMAScript. Not implemented yet
 ImportToken     = "importe"    !IdentifierPart
 ExportToken     = "exporte"    !IdentifierPart
+ExtendsToken    = "warta"      !IdentifierPart
 ClassToken      = "naw3"       !IdentifierPart
 ConstToken      = "khelli"     !IdentifierPart
 EnumToken       = "la2i7a"     !IdentifierPart
 SuperToken      = "menjdawdou" !IdentifierPart
+
+// Buggy
+VoidToken       = "void"     !IdentifierPart
 
 // Skipped
 
