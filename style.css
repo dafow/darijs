@@ -3,11 +3,57 @@ body {
 	display: flex;
 }
 
-#darija {
+#darija-container {
 	width: 50%;
 	height: 100vh;
 	border: 2px;
 	background-color: #f3f3f3;
+	border-right: 5px solid white;
+}
+
+.block-header {
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	height: 50px;
+}
+
+#darija-container .block-header h2 {
+	margin: 0 10px;
+	display: inline-block;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 700;
+	font-size: 40px;
+	color: #ff8383;
+	line-height: 60px;
+}
+
+#darija-container .block-header span {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+#darija-container #darija {
+	width: 100%;
+	height: calc(100% - 100px);
+}
+
+.buttons-container {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+}
+
+.buttons-container .btn {
+	margin-right: 10px;
+}
+
+.buttons-container .btn:hover {
+	background-color: #ff8383;
 }
 
 #js {
@@ -20,7 +66,7 @@ body {
 #translated {
 	height: 60%;
 	width: 100%;
-	background-color: #ffffde;
+	background-color: #effffe;
 }
 
 #result {

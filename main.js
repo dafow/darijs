@@ -44,26 +44,30 @@ $(document).ready(function() {
 	var jsFlask = new CodeFlask;
 	jsFlask.run('#translated', { language: 'javascript' });
 	
-	djsFlask.onUpdate(function(code) {
+	$('.buttons-container .btn').click(function(e) {
 		try {
 			window.kteb.m7i();
+			var code = $('#darija code')[0].textContent;
 			//parse darijs using parser generated with pegjs using darijs grammar
 			var darijsAST = darijs.parse(code);
 			//generate ecmascript based on returned AST
 			var trans = escodegen.generate(darijsAST);
 			jsFlask.update(trans);
-			try {
-				var evaled = eval('try{'+
-					trans+
-				'}catch(e){'+
-				'if(e instanceof ReferenceError){var varName=e.message.split(" ")[0];console.log("had \'"+varName+"\' ma kaynach aw!");}'+
-				'else if(e instanceof TypeError){var varName=e.message.split(" ")[0];console.log("had ldalla \'"+varName+"\' ma kaynach aw!");}'+
-				'else{console.log("sir googli hadchi..."+e.message);}'+
-				'}');
-				if (evaled !== undefined) window.kteb.message(evaled);
-			}
-			catch (evalErr) {
-				console.log(evalErr);
+			
+			if (e.currentTarget.classList.contains('interpret')) {
+				try {
+					var evaled = eval('try{'+
+						trans+
+					'}catch(e){'+
+					'if(e instanceof ReferenceError){var varName=e.message.split(" ")[0];console.log("had \'"+varName+"\' ma kaynach aw!");}'+
+					'else if(e instanceof TypeError){var varName=e.message.split(" ")[0];console.log("had ldalla \'"+varName+"\' ma kaynach aw!");}'+
+					'else{console.log("sir googli hadchi..."+e.message);}'+
+					'}');
+					if (evaled !== undefined) window.kteb.message(evaled);
+				}
+				catch (evalErr) {
+					console.log(evalErr);
+				}
 			}
 		}
 		catch (err) {
@@ -72,6 +76,4 @@ $(document).ready(function() {
 			console.log(err);
 		}
 	});
-	
-	
 });

@@ -2,16 +2,30 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Dari.js - JS in Darija</title>
 		<link rel="stylesheet" href="lib/prism/prism.css">
 		<link rel="stylesheet" href="lib/codeflask/codeflask.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.min.css"  media="screen,projection"/>
 		<link rel="stylesheet" href="style.css">
 		<script src="lib/prism/prism.js" async></script>
 		<script src="lib/codeflask/codeflask.js" async></script>
 		<script src="bundle.js" async></script>
 	</head>
 	<body>
-		<div id="darija" data-language="javascript"></div>
+		<div id="darija-container">
+			<div class="block-header">
+				<a href="https://github.com/BBackerry/darijs"><h2>Dari.js</h2></a><span>kteb lcode dialek lte7t</span>
+			</div>
+			
+			<div id="darija" data-language="javascript"></div>
+			
+			<div class="buttons-container">
+				<a class="waves-effect waves-light btn translate">terjem</a>
+				<a class="waves-effect waves-light btn interpret">terjem + bdah</a>
+			</div>
+		</div>
 		
 		<div id="js">
 			<div id="translated" data-language="javascript"></div>
