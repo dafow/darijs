@@ -1,5 +1,12 @@
 # dari.js
 
+## To non-darija speakers:
+> Moroccan Arabic or Moroccan Darija (الدارجة, [ddæɾiʒæ] in Morocco) is a member of the Maghrebi Arabic language continuum spoken in Morocco. It is mutually intelligible to some extent with Algerian Arabic and to a lesser extent with Tunisian Arabic. It has been heavily influenced by Berber, Latin (African Romance), French, and Spanish.
+
+This repository aims to help non-English speakers to have fun with programming by translating JavaScript keywords into an interpretable language clone. This is mainly done through [pegjs](https://github.com/pegjs/pegjs/) to generate a new grammar and parser for darijs (translating keywords into their darija equivalent: see table below for a list of keywords). This allows constructing an [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) consumed by [escodegen](https://github.com/estools/escodegen) which generates good old regular ECMAScript.
+
+You can find an example of a live interpreter hosted here http://172.104.11.22/darijs/ (hint: "terjem" means "translate" and "bdah" obviously means "start (the script)"
+
 ## hhhhhhhhhhhhhhhhhhhhhhhhhh
 
 bghiti t3elem lprogramation bla ma t3elem langlai ? sara7a sir t9ra langlai
